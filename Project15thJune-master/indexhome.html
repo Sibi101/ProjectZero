@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default rounded borders and increase the bottom margin */
+    :root {
+      --jumbotron-padding-y: 4rem;
+    }
+    .album{
+      background: url('bak1.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .jumbotron {
+      padding-top: var(--jumbotron-padding-y);
+      padding-bottom: var(--jumbotron-padding-y);
+      margin-bottom: 0;
+      background: url('bak.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+    }
+    @media (min-width: 700px) {
+      .jumbotron {
+        padding-top: calc(var(--jumbotron-padding-y) * 2);
+        padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+      }
+    }
+    h3{
+      text-align: center;
+    }
+
+    .cart-text{
+      text-align: center;
+    }
+
+    .card{
+      border: 3px solid crimson;
+    }
+
+    .jumbotron p:last-child {
+      margin-bottom: 0;
+    }
+
+    .card-img-top{
+      width: 100%;
+      height: auto;
+    }
+
+    .jumbotron-heading {
+      font-weight: 200px;
+      font-size: 90px;
+      font-style: italic;
+      color: white;
+    }
+
+    .jumbotron .container {
+      max-width: 35rem;
+    }
+
+    footer {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      background-color: #f2f2f2;
+      padding: 10px;
+    }
+
+    footer p {
+      margin-bottom: .10rem;
+    }
+
+
+
+    .box-shadow { box-shadow: 0 .10rem .60rem rgba(0, 0, 0, .05); }
+
+    .navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+}
+p{
+  font-size: 25px;
+  font-family: cursive;
+}
+h1{
+  font-size: 30px;
+  font-family: monospace;
+}
+.panel-footer{
+  color: red;
+  font-size: 25px;
+}
+
+
+
+
+  </style>
+</head>
+<body>
+
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1>Scoops</h1>
+    <p>A little bliss in every bite...</p>
+  </div>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Order History</a></li>
+        <li><a href="#">Stores</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <div class="album py-5 bg-light">
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Chocolate chip cookie dough icecream</div>
+        <div class="panel-body"><img src="1.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Rs. 99</div>
+          <div class="btn-group text-center">
+            <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+          </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="panel panel-danger">
+        <div class="panel-heading">Butter Brickle icecream</div>
+        <div class="panel-body"><img src="2.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Rs.99</div>
+        <div class="btn-group text-center">
+          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="panel panel-success">
+        <div class="panel-heading">Raspberry icecream</div>
+        <div class="panel-body"><img src="3.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Rs.99</div>
+        <div class="btn-group text-center">
+          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><br>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Neapolitan icecream</div>
+        <div class="panel-body"><img src="4.jpg" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Rs.99</div>
+        <div class="btn-group text-center">
+          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="panel panel-danger">
+        <div class="panel-heading">Rocky road icecream</div>
+        <div class="panel-body"><img src="5.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer"> Rs.99</div>
+        <div class="btn-group text-center">
+          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="panel panel-success">
+        <div class="panel-heading">Butter pecan ice cream</div>
+        <div class="panel-body"><img src="6.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Rs.99</div>
+        <div class="btn-group text-center">
+          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><br>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Pistachio icecream</div>
+        <div class="panel-body"><img src="7.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Rs. 99</div>
+        <div class="btn-group text-center">
+          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="panel panel-danger">
+        <div class="panel-heading">Pistachio pudding icecream</div>
+        <div class="panel-body"><img src="8.png" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer"> Rs.99</div>
+        <div class="btn-group text-center">
+          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="panel panel-success">
+        <div class="panel-heading">Mint Chocolate chip icecream</div>
+        <div class="panel-body"><img src="9.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Rs.99</div>
+        <div class="btn-group text-center">
+          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Butter pecan icecream</div>
+        <div class="panel-body"><img src="10.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Rs.99</div>
+        <div class="btn-group text-center">
+          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="panel panel-danger">
+        <div class="panel-heading">Spumoni icecream</div>
+        <div class="panel-body"><img src="11.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Rs.99</div>
+        <div class="btn-group text-center">
+          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="panel panel-success">
+        <div class="panel-heading">Cherry Garcia icecream</div>
+        <div class="panel-body"><img src="12.jpg" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-footer">Rs.99</div>
+        <div class="btn-group text-center">
+          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><br><br>
+
+<p>All Rights Reserved To SCOOPS</p>
+
+
+
+</body>
+</html>
